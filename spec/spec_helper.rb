@@ -4,9 +4,6 @@ require 'rspec'
 require 'mechanize-wysi'
 
 require 'simplecov'
-SimpleCov.start
-require 'simplecov-rcov'
-SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
