@@ -3,6 +3,11 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rspec'
 require 'mechanize-wysi'
 
+require 'simplecov'
+SimpleCov.start
+require 'simplecov-rcov'
+SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
