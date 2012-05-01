@@ -8,6 +8,13 @@ rescue Bundler::BundlerError => e
 end
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../spec/support')
 require 'mechanize-wysi'
+require 'test_object'
 
 require 'rspec/expectations'
+
+class Mechanize::TestAgent < Mechanize
+  include Mechanize::Wysi
+end
+
