@@ -10,8 +10,8 @@ group :development do
   gem "cucumber"
 #  gem "bundler", "~> 1.0.0"
   gem "jeweler", "~> 1.6.2"
-  gem "simplecov"
-  gem "simplecov-rcov"
+  gem "simplecov",      :require => false
+  gem "simplecov-rcov", :require => false
   gem "guard"
   gem "guard-rspec"
   gem "guard-cucumber"
